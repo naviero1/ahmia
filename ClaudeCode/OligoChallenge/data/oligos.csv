@@ -1,0 +1,22 @@
+oligo_id,drug_name,oligo_class,target,route,backbone_chemistry,sugar_mods,gapmer_design,conjugation,length_nt,sequence_5to3,approval_status
+OL001,Fomivirsen,gapmer_ASO,CMV IE2,intravitreal,full_PS,DNA,n/a,none,21,TBD,approved_withdrawn
+OL002,Mipomersen,gapmer_ASO,APOB,SC,full_PS,2'-MOE,5-10-5,none,20,TBD,approved_withdrawn_mkt
+OL003,Inotersen,gapmer_ASO,TTR,SC,full_PS,2'-MOE,5-10-5,none,20,TBD,approved
+OL004,Eplontersen,gapmer_ASO,TTR,SC,full_PS,2'-MOE,5-10-5,GalNAc,20,TBD,approved
+OL005,Volanesorsen,gapmer_ASO,APOC3,SC,full_PS,2'-MOE,5-10-5,none,20,TBD,approved_EMA
+OL006,Olezarsen,gapmer_ASO,APOC3,SC,full_PS,2'-MOE,5-10-5,GalNAc,20,TBD,approved_2024
+OL007,Nusinersen,splice_switch_ASO,SMN2,intrathecal,full_PS,2'-MOE,n/a,none,18,TBD,approved
+OL008,Tofersen,gapmer_ASO,SOD1,intrathecal,full_PS,2'-MOE,5-10-5,none,20,TBD,approved
+OL009,Eteplirsen,PMO,DMD exon51,IV,phosphorodiamidate_morpholino,morpholino,n/a,none,30,TBD,approved
+OL010,Golodirsen,PMO,DMD exon53,IV,phosphorodiamidate_morpholino,morpholino,n/a,none,25,TBD,approved
+OL011,Viltolarsen,PMO,DMD exon53,IV,phosphorodiamidate_morpholino,morpholino,n/a,none,21,TBD,approved
+OL012,Casimersen,PMO,DMD exon45,IV,phosphorodiamidate_morpholino,morpholino,n/a,none,22,TBD,approved
+OL013,Drisapersen,gapmer_ASO,DMD exon51,SC,full_PS,2'-OMe,n/a,none,20,TBD,not_approved_withdrawn
+OL014,Patisiran,siRNA,TTR,IV,PO/PS_mixed,2'-OMe/2'-F,n/a,lipid_LNP,21,TBD,approved
+OL015,Givosiran,GalNAc_siRNA,ALAS1,SC,PS_2'-OMe_2'-F,2'-OMe/2'-F,n/a,GalNAc,21,TBD,approved
+OL016,Lumasiran,GalNAc_siRNA,HAO1,SC,PS_2'-OMe_2'-F,2'-OMe/2'-F,n/a,GalNAc,21,TBD,approved
+OL017,Inclisiran,GalNAc_siRNA,PCSK9,SC,PS_2'-OMe_2'-F,2'-OMe/2'-F,n/a,GalNAc,21,TBD,approved
+OL018,Vutrisiran,GalNAc_siRNA,TTR,SC,PS_2'-OMe_2'-F,2'-OMe/2'-F,n/a,GalNAc,21,TBD,approved
+OL019,Nedosiran,GalNAc_siRNA,LDHA,SC,PS_2'-OMe_2'-F,2'-OMe/2'-F,n/a,GalNAc,21,TBD,approved
+OL020,Pegaptanib,aptamer,VEGF165,intravitreal,PEG,2'-F/2'-OMe_RNA,n/a,PEG,27,TBD,approved
+OL021,Avacincaptad_pegol,aptamer,complement_C5,intravitreal,PEG,RNA,n/a,PEG,TBD,TBD,approved_2023

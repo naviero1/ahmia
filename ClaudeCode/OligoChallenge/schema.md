@@ -4,6 +4,18 @@ Three blocks: **predictors** (oligo design + sequence-derived), **exposure
 context**, **endpoints/label**, plus mandatory **provenance**. Designed so a
 row can come from an in-vitro panel or a clinical drug and stay comparable.
 
+## Table design (normalized, per-measurement grain)
+
+Two joined tables so one in-vitro study (oligo × dose × model × readout) can
+legitimately contribute many rows, while oligo design is stored once:
+
+- **`data/oligos.csv`** — one row per unique oligo (block A predictors). PK `oligo_id`.
+- **`data/measurements.csv`** — one row per measurement (blocks C + D + E).
+  FK `oligo_id` → oligos. **This is the table that scales to ≥100 records.**
+
+Sequence-derived features (block B) are computed from `oligos.csv` into a
+derived file later; they are not hand-entered.
+
 ## A. Oligo design (predictors)
 
 | Field | Type | Notes |

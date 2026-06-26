@@ -1,0 +1,23 @@
+measurement_id,oligo_id,drug_name,model_system,delivery,concentration,conc_units,exposure_h,readout_type,endpoint_raw,value,units,nephrotox_grade,evidence_source,evidence_confidence,source_ref,curation_notes
+M0001,OL001,Fomivirsen,clinical,n/a,,,,clinical_outcome,"local intravitreal; no systemic renal exposure reported",,,0,clinical,high,NAR2023,route limits systemic renal risk
+M0002,OL002,Mipomersen,clinical,n/a,,,,clinical_outcome,"mild proteinuria reported; hepatotoxicity primary",,,1,clinical,medium,"NephrotoxRev2022; ASO_ADR2024",verify proteinuria incidence vs placebo
+M0003,OL003,Inotersen,clinical,n/a,,,,clinical_outcome,"glomerulonephritis ~3%",3,percent,3,clinical,high,"NephrotoxRev2022; label",strongest clinical renal signal
+M0004,OL003,Inotersen,clinical,n/a,,,,clinical_outcome,"UPCR >5x ULN",15,percent,3,clinical,high,label,dialysis-dependent renal failure cases reported
+M0005,OL004,Eplontersen,clinical,n/a,,,,clinical_outcome,"reduced renal signal vs inotersen (GalNAc, lower dose)",,,1,clinical,medium,label,contrast pair with inotersen
+M0006,OL005,Volanesorsen,clinical,n/a,,,,clinical_outcome,"FSGS case; proteinuria/albuminuria ~7%",7,percent,2,clinical,medium,"label; ASO_ADR2024",verify FSGS attribution
+M0007,OL006,Olezarsen,clinical,n/a,,,,clinical_outcome,"no clear renal signal to date",,,0,clinical,low,TIDES2024,recent approval; monitor emerging data
+M0008,OL007,Nusinersen,clinical,n/a,,,,clinical_outcome,"proteinuria reported; renal/cystatin C monitoring in label",,,1,clinical,medium,label,intrathecal; limited systemic exposure
+M0009,OL008,Tofersen,clinical,n/a,,,,clinical_outcome,"proteinuria observed in trials",,,1,clinical,low,label,verify renal AE rates
+M0010,OL009,Eteplirsen,clinical,n/a,,,,clinical_outcome,"PMO renal accumulation; generally well tolerated",,,1,clinical,medium,NephrotoxRev2022,uncharged backbone differs from PS
+M0011,OL010,Golodirsen,in_vivo_animal,n/a,,,,histopath,"label warns renal toxicity incl. potentially fatal glomerulonephritis (nonclinical)",,,2,in_vivo_animal,medium,label,"warning from animal data, not confirmed clinical"
+M0012,OL011,Viltolarsen,clinical,n/a,,,,clinical_outcome,"monitor renal function per label",,,1,clinical,low,label,PMO class caution
+M0013,OL012,Casimersen,in_vivo_animal,n/a,,,,histopath,"label warns renal toxicity (nonclinical, PMO class)",,,2,in_vivo_animal,medium,label,animal-derived warning
+M0014,OL013,Drisapersen,clinical,n/a,,,,clinical_outcome,"reversible low-molecular-weight proteinuria; increased urinary A1M",,,1,clinical,high,PMC6796739,clinical arm of mechanistic anchor
+M0015,OL014,Patisiran,clinical,n/a,,,,clinical_outcome,"no significant renal signal",,,0,clinical,medium,label,LNP delivery
+M0016,OL015,Givosiran,clinical,n/a,,,,clinical_outcome,"serum creatinine increase / eGFR decrease; chronic renal AEs in label",,,1,clinical,medium,label,clearest renal signal among GalNAc-siRNAs
+M0017,OL016,Lumasiran,clinical,n/a,,,,clinical_outcome,"no nephrotoxic signal (note: disease targets kidney)",,,0,clinical,low,label,disease-vs-drug effect caveat
+M0018,OL017,Inclisiran,clinical,n/a,,,,clinical_outcome,"no renal signal",,,0,clinical,medium,label,
+M0019,OL018,Vutrisiran,clinical,n/a,,,,clinical_outcome,"no renal signal",,,0,clinical,medium,label,
+M0020,OL019,Nedosiran,clinical,n/a,,,,clinical_outcome,"no nephrotoxic signal (disease targets kidney)",,,0,clinical,low,label,
+M0021,OL020,Pegaptanib,clinical,n/a,,,,clinical_outcome,"local intravitreal; no systemic renal",,,0,clinical,low,NAR2023,
+M0022,OL021,Avacincaptad_pegol,clinical,n/a,,,,clinical_outcome,"local intravitreal",,,0,clinical,low,label,verify length/chemistry

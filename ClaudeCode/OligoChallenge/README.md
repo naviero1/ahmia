@@ -27,8 +27,16 @@ which is the signal a sequence→toxicity model needs. So:
 
 | File | Purpose |
 |------|---------|
-| `schema.md` | Variable dictionary: predictors, exposure context, graded label, provenance. |
-| `data/seed_inventory.csv` | Tier-2 anchor set: approved + late-clinical oligos joined to known renal signals + sources. |
+| `schema.md` | Variable dictionary + two-table design. |
+| `data/oligos.csv` | Oligo dictionary — one row per unique oligo (design predictors). PK `oligo_id`. |
+| `data/measurements.csv` | Measurement fact table — one row per oligo×model×dose×readout. **Scales to ≥100.** |
+| `sources/SOURCES.md` | Prioritized fetch list; drop supplementary files in `sources/` for extraction. |
+
+## Record count (target ≥100)
+
+Scope = **strict kidney, per-measurement grain**. Current = **22** measurements
+(clinical/animal anchors only). Remaining ~78+ come from kidney in-vitro
+supplementary tables (see `sources/SOURCES.md`, Tier N) once dropped into `sources/`.
 
 ## Status & honest caveats
 
@@ -46,6 +54,7 @@ which is the signal a sequence→toxicity model needs. So:
 
 ## Next steps
 
-1. Verify seed-inventory anchors against primary sources; fill `sequence_5to3`.
-2. Mine Tier-1 in-vitro supplementary tables to grow N (the modeling backbone).
-3. Add FAERS renal-AE disproportionality as a supporting clinical signal.
+1. Drop kidney source files (Tier N in `sources/SOURCES.md`) into `sources/`.
+2. I extract each into per-measurement rows → grow `measurements.csv` past 100.
+3. Verify anchors against primary sources; fill `sequence_5to3` in `oligos.csv`.
+4. Compute sequence-derived features (block B) into a derived file.
